@@ -33,14 +33,14 @@ public class User {
 
 一行代码实现Excel的导入导出
 public class TestExcel {
-    //导入成List<POJO>
+  
 	@Test
 	public  void testToList() throws Exception {
 		List<User> list;
 		list = Excel4j.toList("E:/1.xlsx", User.class, 0, 3, 0);
 		System.out.println(list.size());
 	}
-	//导出Excel
+
 	@Test
 	public  void testToExcel() throws Exception{
 		User user1=new User(1, "1",new Date());
